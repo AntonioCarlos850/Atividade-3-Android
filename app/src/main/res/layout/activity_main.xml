@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textCapCharacters"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gender" />
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioButtonGender1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radioButtonGender2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mail" />
+
+        <EditText
+            android:id="@+id/editMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"/>
+
+        <TextView
+            android:id="@+id/pref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pref" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <CheckBox
+                android:id="@+id/checkBoxPref1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music" />
+            <CheckBox
+                android:id="@+id/checkBoxPref2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cinema" />
+            <CheckBox
+                android:id="@+id/checkBoxPref3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sport" />
+            <CheckBox
+                android:id="@+id/checkBoxPref4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gastro" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/not" />
+
+        <Switch
+            android:id="@+id/switchPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show"
+                android:layout_marginRight="@dimen/default1"
+                ></Button>
+
+            <Button
+                android:id="@+id/clean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clean"
+                ></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/result"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <TextView
+                android:id="@+id/resultName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TextView>
+            <TextView
+                android:id="@+id/resultGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TextView>
+            <TextView
+                android:id="@+id/resultMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TextView>
+            <TextView
+                android:id="@+id/resultPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TextView>
+            <TextView
+                android:id="@+id/resultPref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TextView>
+            <TextView
+                android:id="@+id/resultNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
